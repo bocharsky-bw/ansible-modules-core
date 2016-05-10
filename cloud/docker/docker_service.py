@@ -373,7 +373,7 @@ try:
     from compose.cli.main import convergence_strategy_from_opts, build_action_from_opts, image_type_from_opt
 except ImportError as exc:
     HAS_COMPOSE = False
-    HAS_COMPOSE_EXC = six.__file__
+    HAS_COMPOSE_EXC = str(exc)
 
 from ansible.module_utils.docker_common import *
 
